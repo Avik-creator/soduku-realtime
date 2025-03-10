@@ -43,8 +43,8 @@ export const Chat = () => {
       e?.preventDefault()
       if (!input) return
       const data = new LiveObject({
-        user: user?.info.name,
-        avatar: user?.info.avatar,
+        user: user?.info.name ?? 'Anonymous',
+        avatar: user?.info.avatar ?? '',
         text: input
       })
       storage?.get("messages")?.push(data)
