@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Realtime Sudoku
 
-## Getting Started
+Play Sudoku with your friends in real-time! This project is a collaborative Sudoku game built with Next.js and Liveblocks, allowing multiple players to solve the puzzle together simultaneously.
 
-First, run the development server:
+Through this project my AIM was to learn about LiveBlocks and will soon write an blog about it.
 
+
+## 🚀 Features
+
+- **Real-time Multiplayer:** Solve Sudoku puzzles with friends and see their moves live.
+- **Multiple Difficulty Levels:** Choose from Easy, Medium, Hard, Insane, and Inhuman.
+- **User Authentication:** Users can join with their names and avatars.
+- **Live Chat:** Communicate with other players while solving the puzzle.
+- **Game Timer:** Track your time and compete with friends.
+- **Mistake Counter:** Keeps track of incorrect entries (limited to 3 mistakes).
+- **Undo & Redo:** Easily undo or redo your moves.
+- **Notes Mode:** Jot down potential numbers in cells.
+- **Input Validation:** Enable real-time validation to highlight correct and incorrect numbers.
+- **Invite Friends:** Share the game link or QR code for easy invites.
+- **Theme Toggle:** Switch between light and dark modes.
+- **Confetti Celebration:** Enjoy a confetti burst when you complete the puzzle! 🎉
+
+## 🛠️ Technologies Used
+
+### **Frontend**
+- [Next.js](https://nextjs.org/) - React framework for building user interfaces.
+- [React](https://reactjs.org/) - JavaScript library for UI development.
+- [TypeScript](https://www.typescriptlang.org/) - Typed superset of JavaScript.
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework.
+- [shadcn/ui](https://ui.shadcn.com/) - Reusable components built with Radix UI and Tailwind CSS.
+- [framer-motion](https://www.framer.com/motion/) - Animation library for smooth transitions.
+- [lucide-react](https://lucide.dev/) - Beautifully simple icons.
+- [react-qr-code](https://www.npmjs.com/package/react-qr-code) - QR code generator.
+- [sonner](https://sonner.emilkowalski.com/) - Elegant toast notifications.
+- [next-themes](https://www.npmjs.com/package/next-themes) - Theme switching support.
+- [canvas-confetti](https://www.npmjs.com/package/canvas-confetti) - Confetti animation library.
+
+### **Backend & Realtime**
+- [Liveblocks](https://liveblocks.io/) - Real-time collaboration platform.
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/Avik-creator/soduku-realtime
+cd sudoku-realtime
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2️⃣ Install Dependencies
+```bash
+npm install # or yarn install or pnpm install or bun install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3️⃣ Set Up Environment Variables
+Create a `.env.local` file in the root directory and add your Liveblocks secret key:
+```bash
+LIVEBLOCKS_SECRET_KEY=sk_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+Get your secret key from the [Liveblocks Dashboard](https://liveblocks.io/).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4️⃣ Run the Development Server
+```bash
+npm run dev # or yarn dev or pnpm dev or bun dev
+```
 
-## Learn More
+### 5️⃣ Open in Browser
+Visit [http://localhost:3000](http://localhost:3000) to access the application.
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Deployment
+The easiest way to deploy your Next.js app is with [Vercel](https://vercel.com/).
+Follow the [Next.js Deployment Guide](https://nextjs.org/docs/deployment) for detailed instructions.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📚 Learn More
+Explore the following documentation:
+- [Next.js](https://nextjs.org/docs)
+- [Liveblocks](https://liveblocks.io/docs)
+- [shadcn/ui](https://ui.shadcn.com/docs)
+- [Tailwind CSS](https://tailwindcss.com/docs)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🤝 Contributing
+Contributions are welcome! If you have ideas for improvements or bug fixes, feel free to [open an issue](https://github.com/your-repo/issues) or submit a pull request.
 
-## Deploy on Vercel
+## 📜 License
+This project is open-source and licensed under the [MIT License](LICENSE).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Enjoy playing Sudoku with your friends in real-time! 🎮
+
