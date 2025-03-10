@@ -17,6 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Realtime Sudoku",
   description: "Play Sudoku with your friends and complete all the stages.",
+  creator: "Avik Mukherjee",
+  keywords: ["sudoku", "realtime", "multiplayer"],
+  abstract: "Play Sudoku with your friends and complete all the stages.",
 };
 
 export default function RootLayout({
