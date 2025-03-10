@@ -13,12 +13,14 @@ import { Toolbar } from "@/components/soduku/toolBar"
 
 
 export default async function Room({
-  params
+ params,
 }: {
-  params: { id: string }
+  params: Promise<{ id: string }>
 }) {
+
+  const {id} = await params
   return (
-    <LiveBlocksRoom roomId={params.id}>
+    <LiveBlocksRoom roomId={id}>
       <div className="grid grid-cols-6 gap-2 px-2 pt-2 pb-4 sm:gap-4 sm:rounded-xl sm:border sm:p-6 sm:shadow">
         <div className="order-1 col-span-6 flex h-8 items-center justify-between sm:border-b sm:pb-4">
           <Timer />
