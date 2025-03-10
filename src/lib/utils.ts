@@ -22,7 +22,7 @@ export const generateSoduku = (difficulty: string) => {
       value: value === "." ? 0 : Number(value),
       immutable: value === "." ? false : true,
       valid: value === "." ? false : true,
-      key: value === "." ? Number(sodukuGrid.get(index)) : Number(value)
+      key: value === "." ? Number(solve[index]) : Number(value)
     })
     sodukuGrid.push(square)
   })
