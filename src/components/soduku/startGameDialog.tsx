@@ -5,7 +5,7 @@ import { Input } from "../ui/input";
 import { Label } from "../ui/label";
 import { ToggleGroup, ToggleGroupItem } from "../ui/toggle-group";
 import { DIFFICULTIES } from "@/utils/constants";
-
+import { useRouter } from "next/navigation";
 import { FormEvent, useState } from "react";
 import { GameDialog } from "./gameDialog";
 import { SubmitButton } from "./submit-button";
@@ -14,6 +14,10 @@ export function StartGameDialog(){
     const [difficulty, setDifficulty] = useState("");
     const [name, setName] = useState("");
     const [loadingText, setLoadingText] = useState("Start game");
+
+    const router = useRouter();
+
+
 
 
     const onSubmitHandler = async (e: FormEvent<HTMLFormElement>) => {
@@ -34,6 +38,7 @@ export function StartGameDialog(){
 
             if(response.ok){
                 setLoadingText("Game Created");
+                router.push(`/sudoku/${id}`);
             }
         }catch(error){
             console.error(error);
