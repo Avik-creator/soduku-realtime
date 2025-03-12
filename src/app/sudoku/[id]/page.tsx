@@ -10,6 +10,7 @@ import { NotesProvider } from "@/context/notesProvider"
 import { Soduku } from "@/components/soduku/mainUI/soduku"
 import { Numpad } from "@/components/soduku/numPad"
 import { Toolbar } from "@/components/soduku/toolBar"
+import { MobileNumpad } from "@/components/soduku/MobileNumpad"
 
 
 export default async function Room({
@@ -42,7 +43,7 @@ export default async function Room({
             </div>
             <div className="order-3 col-span-6 my-4 px-1 sm:hidden">
               <div className="flex w-full gap-2">
-                <Numpad />
+                <MobileNumpad />
               </div>
             </div>
             <div className="order-5 col-span-6 mt-2 flex size-full flex-col gap-1 sm:order-4 sm:col-span-2 sm:m-0 sm:grid">

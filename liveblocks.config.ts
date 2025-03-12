@@ -25,7 +25,7 @@ declare global {
     index: number | null
     valueBefore: number | undefined | LiveList<number>
     valueAfter: number | undefined | LiveList<number>
-    mode: "default" | "notes" | "erase"
+    mode: "default" | "notes" | "undo" | "redo" | "erase"
   }
 
   interface Liveblocks {
